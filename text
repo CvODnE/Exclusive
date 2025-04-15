@@ -1,0 +1,863 @@
+const products = [
+        {
+            category: "othres",
+            new: '',
+            off: '',
+            src: "./assets/71RdoeXxtrL 1.png",
+            title : "Breed Dry Dog Food",
+            text: `<div class="text">
+                        <h5 class="price">$100</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(35)</h5>
+                    </div>`,
+        },
+        {   
+            category: "camera",
+            new: '',
+            off: '',
+            src: "./assets/eos-250d-03-500x500 1.png",
+            title : "CANON EOS DSLR Camera",
+            text: `<div class="text">
+                        <h5 class="price">$360</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(95)</h5>
+                    </div>`,
+        },
+        {
+            category: "computer",
+            new: '',
+            off: '',
+            src: "./assets/ideapad-gaming-3i-01-500x500 1.png",
+            title : "ASUS FHD Gaming Laptop",
+            text: `<div class="text">
+                        <h5 class="price">$700</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(325)</h5>
+                    </div>`,
+        },
+        {
+            category: "othres",
+            new: '',
+            off: '',
+            src: "./assets/curology-j7pKVQrTUsM-unsplash 1.png",
+            title : "Curology Product Set",
+            text: `<div class="text">
+                        <h5 class="price">$500</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(145)</h5>
+                    </div>`,
+        },
+        {
+            category: "othres",
+            new: '<button class="new">New</button>',
+            off: '',
+            src: "./assets/New-Mercedes-Benz-Gtr-Licensed-Ride-on-Car-Kids-Electric-Toy-Car 1.png",
+            title : "Kids Electric Car",
+            text: `<div class="text">
+                        <h5 class="price">$960</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(65)</h5>
+                    </div>
+                    <div class="dots">
+                        <div class="color"></div>
+                        <div class="dot"></div>
+                    </div>`,
+        },
+        {
+            category: "othres",
+            new: '',
+            off: '',
+            src: "./assets/Copa_Sense 1.png",
+            title : "Jr. Zoom Soccer Cleats",
+            text: `<div class="text">
+                        <h5 class="price">$1160</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(35)</h5>
+                    </div>
+                    <div class="dots">
+                        <div class="color" style="background: #EEFF61;"></div>
+                        <div class="dot"></div>
+                    </div>`,
+        },
+        {
+            category: "game",
+            new: '<button class="new">New</button>',
+            off: '',
+            src: "./assets/GP11_PRD3 1.png",
+            title : "GP11 Shooter USB Gamepad",
+            text: `<div class="text">
+                        <h5 class="price">$660</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                        </div>
+                        <h5 class="grey">(55)</h5>
+                    </div>
+                    <div class="dots">
+                        <div class="color" style="background: #000;"></div>
+                        <div class="dot"></div>
+                    </div>`,
+        },
+        {
+            category: "othres",
+            new: '',
+            off: '',
+            src: "./assets/698717_Z8A1X_3475_001_100_0000_Light-Reversible-quilted-satin-jacket 1.png",
+            title : "Quilted Satin Jacket",
+            text: `<div class="text">
+                        <h5 class="price">$660</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                        </div>
+                        <h5 class="grey">(55)</h5>
+                    </div>
+                    <div class="dots">
+                        <div class="color" style="background: #184A48;"></div>
+                        <div class="dot"></div>
+                    </div>`,
+        },
+        {
+            category: "game",
+            new: '',
+            off: '<button class="off">-40%</button>',
+            src: "./assets/g92-2-500x500 1.png",
+            title : "HAVIT HV-G92 Gamepad",
+            text: `<div class="text">
+                        <h5 class="price">$120</h5>
+                        <h5 class="strike">$160</h5>
+                    </div>
+                    <div class="texts">
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(88)</h5>
+                    </div>`,
+        },
+        {
+            category: "game",
+            new: '',
+            off: '<button class="off">-35%</button>',
+            src: "./assets/ak-900-01-500x500 1.png",
+            title : "AK-900 Wired Keyboard",
+            text: `<div class="text">
+                        <h5 class="price">$960</h5>
+                        <h5 class="strike">$1160</h5>
+                    </div>
+                    <div class="texts">
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(75)</h5>
+                    </div>`,
+        },
+        {
+            category: "game",
+            new: '',
+            off: '<button class="off">-30%</button>',
+            src: "./assets/g27cq4-500x500 1.png",
+            title : "IPS LCD Gaming Monitor",
+            text: `<div class="text">
+                        <h5 class="price">$370</h5>
+                        <h5 class="strike">$400</h5>
+                    </div>
+                    <div class="texts">
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(99)</h5>
+                    </div>`,
+        },
+        {
+            category: "game",
+            new: '',
+            off: '',
+            src: "./assets/gammaxx-l240-argb-1-500x500 1.png",
+            title : "RGB liquid CPU Cooler",
+            text: `<div class="text">
+                        <h5 class="price">$160</h5>
+                        <h5 class="strike">$170</h5>
+                    </div>
+                    <div class="texts">
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                        </div>
+                        <h5 class="grey">(65)</h5>
+                    </div>`,
+        },
+        {
+            category: "othres",
+            new: '',
+            off: '',
+            src: "./assets/71RdoeXxtrL 1.png",
+            title : "Breed Dry Dog Food",
+            text: `<div class="text">
+                        <h5 class="price">$100</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(35)</h5>
+                    </div>`,
+        },
+        {
+            category: "camera",
+            new: '',
+            off: '',
+            src: "./assets/eos-250d-03-500x500 1.png",
+            title : "CANON EOS DSLR Camera",
+            text: `<div class="text">
+                        <h5 class="price">$360</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(95)</h5>
+                    </div>`,
+        },
+        {
+            category: "computer",
+            new: '',
+            off: '',
+            src: "./assets/ideapad-gaming-3i-01-500x500 1.png",
+            title : "ASUS FHD Gaming Laptop",
+            text: `<div class="text">
+                        <h5 class="price">$700</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(325)</h5>
+                    </div>`,
+        },
+        {
+            category: "othres",
+            new: '',
+            off: '',
+            src: "./assets/curology-j7pKVQrTUsM-unsplash 1.png",
+            title : "Curology Product Set",
+            text: `<div class="text">
+                        <h5 class="price">$500</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(145)</h5>
+                    </div>`,
+        },
+        {
+            category: "othres",
+            new: '<button class="new">New</button>',
+            off: '',
+            src: "./assets/New-Mercedes-Benz-Gtr-Licensed-Ride-on-Car-Kids-Electric-Toy-Car 1.png",
+            title : "Kids Electric Car",
+            text: `<div class="text">
+                        <h5 class="price">$960</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(65)</h5>
+                    </div>
+                    <div class="dots">
+                        <div class="color"></div>
+                        <div class="dot"></div>
+                    </div>`,
+        },
+        {
+            category: "othres",
+            new: '',
+            off: '',
+            src: "./assets/Copa_Sense 1.png",
+            title : "Jr. Zoom Soccer Cleats",
+            text: `<div class="text">
+                        <h5 class="price">$1160</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(35)</h5>
+                    </div>
+                    <div class="dots">
+                        <div class="color" style="background: #EEFF61;"></div>
+                        <div class="dot"></div>
+                    </div>`,
+        },
+        {
+            category: "game",
+            new: '<button class="new">New</button>',
+            off: '',
+            src: "./assets/GP11_PRD3 1.png",
+            title : "GP11 Shooter USB Gamepad",
+            text: `<div class="text">
+                        <h5 class="price">$660</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                        </div>
+                        <h5 class="grey">(55)</h5>
+                    </div>
+                    <div class="dots">
+                        <div class="color" style="background: #000;"></div>
+                        <div class="dot"></div>
+                    </div>`,
+        },
+        {
+            category: "othres",
+            new: '',
+            off: '',
+            src: "./assets/698717_Z8A1X_3475_001_100_0000_Light-Reversible-quilted-satin-jacket 1.png",
+            title : "Quilted Satin Jacket",
+            text: `<div class="text">
+                        <h5 class="price">$660</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                        </div>
+                        <h5 class="grey">(55)</h5>
+                    </div>
+                    <div class="dots">
+                        <div class="color" style="background: #184A48;"></div>
+                        <div class="dot"></div>
+                    </div>`,
+        },
+        {
+            category: "phone",
+            new: '',
+            off: '',
+            src: "./assets/s25ultra.png",
+            title : "Samsung Galaxy S25 Ultra 5G",
+            text: `<div class="text">
+                        <h5 class="price">$4790</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(27)</h5>
+                    </div>`,
+        },
+        {
+            category: "phone",
+            new: '',
+            off: '',
+            src: "./assets/iQOO Neo.png",
+            title : "iQOO Neo 10R 5G",
+            text: `<div class="text">
+                        <h5 class="price">$5130</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(59)</h5>
+                    </div>`,
+        },
+        {
+            category: "phone",
+            new: '',
+            off: '',
+            src: "./assets/POCO C61 Mystical Green 4GB RAM 64GB ROM.png",
+            title : "POCO C61 Mystical Green 4GB RAM",
+            text: `<div class="text">
+                        <h5 class="price">$2950</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(123)</h5>
+                    </div>`,
+        },
+        {
+            category: "phone",
+            new: '',
+            off: '',
+            src: "./assets/Samsung Galaxy M05.png",
+            title : "Samsung Galaxy M05",
+            text: `<div class="text">
+                        <h5 class="price">$5300</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(141)</h5>
+                    </div>`,
+        },
+        {
+            category: "computer",
+            new: '',
+            off: '',
+            src: "./assets/hp.png",
+            title : "HP 15s,12th Gen Intel Core",
+            text: `<div class="text">
+                        <h5 class="price">$6100</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(47)</h5>
+                    </div>`,
+        },
+        {
+            category: "computer",
+            new: '',
+            off: '',
+            src: "./assets/lenovo.png",
+            title : "Lenovo IdeaPad Flex 5",
+            text: `<div class="text">
+                        <h5 class="price">$5700</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(63)</h5>
+                    </div>`,
+        },
+        {
+            category: "computer",
+            new: '',
+            off: '',
+            src: "./assets/asus.png",
+            title : "ASUS Vivobook Go 15 (2023)",
+            text: `<div class="text">
+                        <h5 class="price">$4900</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(73)</h5>
+                    </div>`,
+        },
+        {
+            category: "computer",
+            new: '',
+            off: '',
+            src: "./assets/dell.png",
+            title : "Dell 15 Thin & Light Laptop",
+            text: `<div class="text">
+                        <h5 class="price">$5900</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(46)</h5>
+                    </div>`,
+        },
+        {
+            category: "watch",
+            new: '',
+            off: '',
+            src: "./assets/watch1.png",
+            title : "Bluetooth Calling Smart Watch",
+            text: `<div class="text">
+                        <h5 class="price">$900</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(67)</h5>
+                    </div>`,
+        },
+        {
+            category: "watch",
+            new: '',
+            off: '',
+            src: "./assets/watch2.png",
+            title : "Noise Pulse 2 Max 1.85 Display",
+            text: `<div class="text">
+                        <h5 class="price">$1100</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(92)</h5>
+                    </div>`,
+        },
+        {
+            category: "watch",
+            new: '',
+            off: '',
+            src: "./assets/watch3.png",
+            title : "Display Bluetooth Smart Watch",
+            text: `<div class="text">
+                        <h5 class="price">$790</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(37)</h5>
+                    </div>`,
+        },
+        {
+            category: "watch",
+            new: '',
+            off: '',
+            src: "./assets/watch4.png",
+            title : "Fastrack Limitless Glide Smart Watch",
+            text: `<div class="text">
+                        <h5 class="price">$1190</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(54)</h5>
+                    </div>`,
+        },
+        {
+            category: "headphone",
+            new: '',
+            off: '',
+            src: "./assets/headset1.png",
+            title : "boAt Rockerz 480 w/RGB LEDs",
+            text: `<div class="text">
+                        <h5 class="price">$590</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(23)</h5>
+                    </div>`,
+        },
+        {
+            category: "headphone",
+            new: '',
+            off: '',
+            src: "./assets/headset2.png",
+            title : "Sony Wireless Bluetooth Headphones",
+            text: `<div class="text">
+                        <h5 class="price">$610</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(57)</h5>
+                    </div>`,
+        },
+        {
+            category: "headphone",
+            new: '',
+            off: '',
+            src: "./assets/headset3.png",
+            title : "ZEBRONICS THUNDER Bluetooth",
+            text: `<div class="text">
+                        <h5 class="price">$530</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(97)</h5>
+                    </div>`,
+        },
+        {
+            category: "headphone",
+            new: '',
+            off: '',
+            src: "./assets/headset4.png",
+            title : "boAt Rockerz 480 w/RGB LEDs",
+            text: `<div class="text">
+                        <h5 class="price">$570</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(177)</h5>
+                    </div>`,
+        },
+        {
+            category: "game",
+            new: '',
+            off: '',
+            src: "./assets/g92-2-500x500 1.png",
+            title : "HAVIT HV-G92 Gamepad",
+            text: `<div class="text">
+                        <h5 class="price">$970</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(21)</h5>
+                    </div>`,
+        },
+        {
+            category: "game",
+            new: '',
+            off: '',
+            src: "./assets/ak-900-01-500x500 1.png",
+            title : "AK-900 Wired Keyboard",
+            text: `<div class="text">
+                        <h5 class="price">$715</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(27)</h5>
+                    </div>`,
+        },
+        {
+            category: "game",
+            new: '',
+            off: '',
+            src: "./assets/g27cq4-500x500 1.png",
+            title : "IPS LCD Gaming Monitor",
+            text: `<div class="text">
+                        <h5 class="price">$990</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(33)</h5>
+                    </div>`,
+        },
+        {
+            category: "game",
+            new: '',
+            off: '',
+            src: "./assets/gammaxx-l240-argb-1-500x500 1.png",
+            title : "RGB liquid CPU Cooler",
+            text: `<div class="text">
+                        <h5 class="price">$750</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(16)</h5>
+                    </div>`,
+        },
+        {
+            category: "camera",
+            new: '',
+            off: '',
+            src: "./assets/eos-250d-03-500x500 1.png",
+            title : "CANON EOS DSLR Camera",
+            text: `<div class="text">
+                        <h5 class="price">$423</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(326)</h5>
+                    </div>`,
+        },
+        {
+            category: "camera",
+            new: '',
+            off: '',
+            src: "./assets/camera1.png",
+            title : "Sony Alpha ZV-E10L 24.2",
+            text: `<div class="text">
+                        <h5 class="price">$326</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(423)</h5>
+                    </div>`,
+        },
+        {
+            category: "camera",
+            new: '',
+            off: '',
+            src: "./assets/camera2.png",
+            title : "Canon EOS R50 RF-S18-45mm",
+            text: `<div class="text">
+                        <h5 class="price">$534</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(246)</h5>
+                    </div>`,
+        },
+        {
+            category: "camera",
+            new: '',
+            off: '',
+            src: "./assets/camera3.png",
+            title : "Sony Alpha ILCE-1 Mirrorless",
+            text: `<div class="text">
+                        <h5 class="price">$253</h5>
+                        <div class="star">
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/Vector.svg" alt=""/>
+                            <img src="./assets/star-half-filled.svg" style="width: 17px;" alt=""/>
+                            <img src="./assets/Vector (1).svg" alt=""/>
+                        </div>
+                        <h5 class="grey">(333)</h5>
+                    </div>`,
+        },
+    ]
+
+    for(let i in products) {
+        let nee = products[i].new
+        let off = products[i].off
+        let src = products[i].src
+        let title = products[i].title
+        let text = products[i].text
+
+        grid.innerHTML += `<a href="./item.html" class="box">
+                    <div class="cart">
+                        <img src="${src}" alt="" class="img"/>
+                        ${nee}
+                        ${off}
+                        <span class="icon">
+                            <img src="./assets/wishlist.svg" alt=""/>
+                        </span>
+                        <span class="icon1">
+                            <img src="./assets/Quick View.svg" alt=""/>
+                        </span>
+                        <button class="cart">Add To Cart</button>
+                    </div>
+                    <h5>${title}</h5>
+                    ${text}
+                </a>`
+    }
