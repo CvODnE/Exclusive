@@ -16,12 +16,61 @@ ul {
 a {
     text-decoration: none;
 }
+div.top {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    height: 50px;
+}
+div.top div.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+div.top div.text p {
+    font-family: poppins;
+    font-weight: 400;
+    color: #fafafa;
+    font-size: 14px;
+    margin-right: 9px;
+}
+div.top div.text button {
+    background: none;
+    border: none;
+    color: #fafafa;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+div.top div.lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+div.top div.lang h5 {
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fafafa;
+    margin-right: 9px;
+}
+div.top div.lang img {
+    width: 15px;
+}
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 90px;
+    padding-right: 90px;
     padding-top: 13px;
     padding-bottom: 13px;
     border-bottom: 0.5px solid #99999999;
@@ -75,7 +124,6 @@ section.wrapper {
 }
 section.spotlight div.black {
     background: #000;
-    width: 1169px;
     height: 453px;
     border-radius: 10px;
     margin: 0 auto;
@@ -111,6 +159,7 @@ section.spotlight div.black div.wrap div.content div.button {
     align-items: center;
     justify-content: space-between;
     gap: 9px;
+    cursor: pointer;
 }
 section.spotlight div.black div.wrap div.content div.button button {
     background: none;
@@ -119,6 +168,7 @@ section.spotlight div.black div.wrap div.content div.button button {
     font-size: 16px;
     font-family: poppins;
     border-bottom: #999 1.5px solid;
+    cursor: pointer;
 }
 section.categories {
     margin-top: 55px;
@@ -145,7 +195,8 @@ section.categories div.flex {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    margin-bottom: 50px;
+    width: 87%;
+    margin: 0 auto;
 }
 section.categories div.flex div.box {
     border-radius: 5px;
@@ -191,6 +242,8 @@ section.categories div.grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 30px;
+    width: 87%;
+    margin: 0 auto;
     border-bottom: #999 2px solid;
     padding-bottom: 27px;
     margin-bottom: 27px;
@@ -255,6 +308,7 @@ section.categories div.grid div.cart button.cart {
     font-size: 16px;
     font-family: poppins;
     opacity: 0%;
+    cursor: pointer;
 }
 section.categories div.grid div.cart button.cart:hover {
     transition: all .5s;
@@ -321,18 +375,22 @@ section.categories button.view {
     font-size: 16px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 section.categories button.view a {
     color: #fafafa;
 }
 section.feature {
     margin-bottom: 27px;
-    margin-top: 45px;
+    margin-top: 75px;
 }
 section.feature div.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 87px;
+    width: 87%;
+    margin: 0 auto;
 }
 section.feature div.flex div.box img {
     background: #000;
@@ -435,6 +493,7 @@ section.footer div.flex div.box div.icons {
     width: 168px;
     gap: 24px;
     margin-top: 27px;
+    cursor: pointer;
 }
 section.footer h5.co {
     border-top: 1px solid #333;
